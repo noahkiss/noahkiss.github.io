@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Kiss</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-muted: #666666;
+            --link: #0066cc;
+            --link-hover: #004499;
+            --border: #e0e0e0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #e0e0e0;
+                --text-muted: #999999;
+                --link: #66b3ff;
+                --link-hover: #99ccff;
+                --border: #333333;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 1rem;
+        }
+
+        main {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .projects {
+            list-style: none;
+        }
+
+        .projects li {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .projects a {
+            display: block;
+            padding: 1rem 0;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .projects a:hover {
+            color: var(--link);
+        }
+
+        .project-name {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Noah Kiss</h1>
+        <p class="subtitle">Projects hosted on GitHub Pages</p>
+
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li>
+                <a href="/tools/">
+                    <div class="project-name">tools</div>
+                    <div class="project-desc">Single-file HTML tools built with LLMs</div>
+                </a>
+            </li>
+            <li>
+                <a href="/markshift/">
+                    <div class="project-name">markshift</div>
+                    <div class="project-desc">Text-to-Markdown conversion suite</div>
+                </a>
+            </li>
+        </ul>
+
+        <footer>
+            <a href="https://github.com/noahkiss">github.com/noahkiss</a>
+        </footer>
+    </main>
+</body>
+</html>
