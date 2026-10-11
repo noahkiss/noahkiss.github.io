@@ -16,6 +16,7 @@ Before creating a new project repo that will use GitHub Pages, check this list t
 |------|------|-------------|
 | `/tools/` | [tools](https://github.com/noahkiss/tools) | Single-file HTML tools |
 | `/markshift/` | [markshift](https://github.com/noahkiss/markshift) | Text-to-Markdown conversion |
+| `/quadcam-voices/` | [quadcam-voices](https://github.com/noahkiss/quadcam-voices) | QuadCam voice packs: index and previews |
 
 ## Adding a New Project Repo to GitHub Pages
 
